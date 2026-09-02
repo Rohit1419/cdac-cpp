@@ -1,13 +1,14 @@
 #pragma once
-#include"Transaction.h"
+#include "Transaction.h"
 
 class Upi : public Transaction
 {
 private:
 	string upiID;
+
 public:
 	Upi(string upiID, float currBal)
-		:Transaction(currBal)
+		: Transaction(currBal)
 	{
 		this->upiID = upiID;
 	}
